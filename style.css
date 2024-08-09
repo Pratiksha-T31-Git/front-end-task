@@ -7,21 +7,48 @@ html,body{
     height: 100%;
     width: 100%;
 }
-.container{
+body{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+.container{
     height: 500px;
     width: 500px;
-    background-color: rgb(244, 100, 180);
-    margin: 50px auto;
-    
+    background-color:darkgreen;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    justify-content: center;*/
 }
 .box{
-    height: 60px;
-    width: 60px;
-    background-color: rgb(190, 228, 20);
+    height: 70px;
+    width: 70px;
+    background-color:blue;
+    border-radius: 10px;
     border: 1px solid black;
-    border-radius: 10px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 0;
+}
+#b3{
+    background-color: orangered;
+    order: 1;
+    align-self: flex-end;
+}
+#b4{
+    background-color: white;
+    order: -1;
+    align-self: flex-end;
+}
+#b2{
+    align-self: flex-start;
 }
